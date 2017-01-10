@@ -65,7 +65,7 @@ public class LuckyMoneyService extends AccessibilityService {
                 if (className.equals("com.tencent.mm.ui.LauncherUI")) {
                     //点击最后一个红包
                     Log.e("demo", "点击红包");
-                    getLastPacket();
+                    getLastNode();
                 } else if (className.equals("com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI")) {
                     //开红包
                     Log.e("demo", "开红包");
@@ -98,7 +98,7 @@ public class LuckyMoneyService extends AccessibilityService {
     /**
      * 获取List中最后一个红包，并进行模拟点击
      */
-    private void getLastPacket() {
+    private void getLastNode() {
         AccessibilityNodeInfo rootNode = getRootInActiveWindow();
         recycle(rootNode);
         if (parents.size() > 0) {
