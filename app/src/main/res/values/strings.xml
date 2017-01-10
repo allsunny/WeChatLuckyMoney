@@ -4,7 +4,9 @@
     <string name="label">微信抢红包</string>
     <string name="share">分享</string>
     <string name="setting">设置</string>
-    <string name="preference">偏好设置</string>
-    <string name="declare">说明</string>
+    <string name="preference">首选项</string>
+    <string name="app_description">应用说明</string>
     <string name="declare_detail">适用于微信6.5.3版本</string>
+    <string name="pref_watch_exclude_words_summary">不拆开包含这些文字的红包(空格间隔)</string>
+    <string name="pref_comment_words_summary">随机选择下列感谢语(空格间隔)</string>
 </resources>

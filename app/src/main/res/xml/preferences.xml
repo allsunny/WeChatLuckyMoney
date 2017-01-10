@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:icon="@null"
+    tools:context=".SettingsActivity">
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="功能选项">
+
+        <Preference
+            android:key="pref_open_delay"
+            android:layout="@layout/preference_switch"
+            android:title="延时拆开红包" />
+        <PreferenceScreen
+            android:key="pref_auto_comment"
+            android:layout="@layout/preference_switch"
+            android:title="拆开红包后自动回复"></PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="监听选项">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_monitor_notification"
+            android:layout="@layout/preference_switch"
+            android:summary="读取消息通知中的红包提示并进入聊天页"
+            android:title="监听系统通知" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_monitor_chatlist"
+            android:layout="@layout/preference_switch"
+            android:summary="读取聊天列表中的红包提示并进入聊天页"
+            android:title="监听聊天列表" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="关于应用">
+        <Preference
+            android:key="app_description"
+            android:layout="@layout/preference_switch"
+            android:title="@string/app_description" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
